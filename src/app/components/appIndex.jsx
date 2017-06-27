@@ -5,28 +5,29 @@ import StatelessComponent from './statelessComponentExample';
 import { Link } from 'react-router';
 
 class AppIndex extends Component {
-  render() {
-    const version = packageJSON.version;
-    const style = {
-      card: {
-        width: '100%',
-        background: '#fff',
-        borderRadius: '5px',
-        WebkitBoxShadow: '0px 2px 2px rgba(0, 0, 0, 0.1)',
-        boxShadow: '0px 2px 2px rgba(0, 0, 0, 0.1)',
-        position: 'relative',
-        padding: '30px 40px 30px 40px',
-        margin: '10px',
-      },
-    };
+    render() {
+        const version = packageJSON.version;
+        const style = {
+            card: {
+            width: '100%',
+            background: '#fff',
+            borderRadius: '5px',
+            WebkitBoxShadow: '0px 2px 2px rgba(0, 0, 0, 0.1)',
+            boxShadow: '0px 2px 2px rgba(0, 0, 0, 0.1)',
+            position: 'relative',
+            padding: '30px 40px 30px 40px',
+            margin: '10px',
+            }
+        };
     return (
     <section className='container'>
-
       <div className="row">
         <div className='card' style={style.card}>
-          <h1 className='logo'>SuperCell <SuperCellIcon /> version {version}</h1>
-        <p>Hello, this is a <strong>ES6 React Class Component! </strong>
-        <HappyFaceIcon /></p>
+            <h1 className='logo'>SuperCell <SuperCellIcon /> version {version}</h1>
+            <p>
+                Hello, this is a <strong>ES6 React Class Component! </strong>
+                <HappyFaceIcon />
+            </p>
         </div>
       </div>
 
